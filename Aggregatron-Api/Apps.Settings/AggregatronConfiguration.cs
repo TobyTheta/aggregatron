@@ -4,10 +4,9 @@ namespace Apps.Settings;
 
 public class AggregatronConfiguration
 {
-    public const string Section = "Aggregatron";
+    private const string Section = "Aggregatron";
     
     public Guid AppSecret { get; private set; }
-    
     public string PgConnectionString { get; private set; }
     public Guid AppUserId { get; private set; }
     public string Dataroot { get; private set; }

@@ -6,6 +6,10 @@ nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.Configuration.Abstractions
 nuget Microsoft.Extensions.Configuration.Json
 
+nuget Microsoft.EntityFrameworkCore
+nuget Microsoft.EntityFrameworkCore.Design
+nuget Npgsql.EntityFrameworkCore.PostgreSQL
+
 nuget Microsoft.NET.Test.Sdk
 nuget NUnit
 nuget FluentAssertions
