@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Persistence", "03 Persis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{10922AB8-5D1C-4953-970E-AC26399A68EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps.Settings", "Apps.Settings\Apps.Settings.csproj", "{4EA62D49-D8EE-477C-8215-E8BDDCBDF066}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{10922AB8-5D1C-4953-970E-AC26399A68EF} = {488175D2-9544-4B5E-8D95-4FC6CDC94F18}
+		{4EA62D49-D8EE-477C-8215-E8BDDCBDF066} = {4149333C-276B-4EEE-BE1C-26A2346996EB}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10922AB8-5D1C-4953-970E-AC26399A68EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10922AB8-5D1C-4953-970E-AC26399A68EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10922AB8-5D1C-4953-970E-AC26399A68EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10922AB8-5D1C-4953-970E-AC26399A68EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA62D49-D8EE-477C-8215-E8BDDCBDF066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA62D49-D8EE-477C-8215-E8BDDCBDF066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA62D49-D8EE-477C-8215-E8BDDCBDF066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA62D49-D8EE-477C-8215-E8BDDCBDF066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
