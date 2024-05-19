@@ -29,6 +29,6 @@ public static class ConfigurationHelper
 
     public static AggregatronConfiguration ReadDeveopmentAggregatronConfiguration()
     {
-        return _aggregatronConfiguration ??= new AggregatronConfiguration(ReadConfiguration(isDevelopment: true));
+        return _aggregatronConfiguration ??= new AggregatronConfiguration(ReadConfiguration(isDevelopment: true), isDevelopment: true);
     }
 }

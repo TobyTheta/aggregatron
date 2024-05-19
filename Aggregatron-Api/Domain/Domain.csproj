@@ -5,5 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Platforms\" />
+    <Folder Include="Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apps.Settings\Apps.Settings.csproj" />
+  </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
