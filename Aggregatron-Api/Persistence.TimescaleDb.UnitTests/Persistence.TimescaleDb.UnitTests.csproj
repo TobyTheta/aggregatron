@@ -6,7 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Apps.Settings\Apps.Settings.csproj" />
+    <ProjectReference Include="..\Domain.Testing\Domain.Testing.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Persistence.TimescaleDb\Persistence.TimescaleDb.csproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

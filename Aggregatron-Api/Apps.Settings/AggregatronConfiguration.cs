@@ -22,4 +22,25 @@ public class AggregatronConfiguration
         Dataroot = configurationSection["LocalAppDataRoot"]!;
         IsDevelopment = isDevelopment;
     }
+    
+    #region Encryption
+    
+    private byte[]? _encryptionKey = null;
+    public byte[] EncryptionKey => _encryptionKey ??= EncryptionHelper.GetEncryptionKey(AppSecret.ToString());
+    
+    public string? Encrypt(string? s)
+    {
+        return s == null ? null : EncryptionHelper.EncryptString(s, EncryptionKey);
+    }
+    public string? Decrypt(string? s)
+    {
+        return s == null ? null : EncryptionHelper.DecryptString(s, EncryptionKey);
+    }
+    
+    public string CreateHash(string clearText)
+    {
+        return EncryptionHelper.Sha256Hash(clearText);
+    }
+    
+    #endregion
 }

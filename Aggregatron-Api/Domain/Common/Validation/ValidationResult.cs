@@ -21,21 +21,21 @@ public record ValidationResult
         Messages.Add(message);
     }
 
-    public ValidationResult AddError(string errorText, string? member = null)
+    public ValidationResult AddError(string errorText, int? entityId = null, string? member = null)
     {
-        Messages.Add(new ValidationMessage(ValidationMessageLevel.Error, errorText, member));
+        Messages.Add(new ValidationMessage(ValidationMessageLevel.Error, errorText,entityId, member));
         return this;
     }
 
-    public ValidationResult AddWarning(string warningText, string? member = null)
+    public ValidationResult AddWarning(string warningText, int? entityId = null, string? member = null)
     {
-        Messages.Add(new ValidationMessage(ValidationMessageLevel.Warning, warningText, member));
+        Messages.Add(new ValidationMessage(ValidationMessageLevel.Warning, warningText, entityId, member));
         return this;
     }
 
-    public ValidationResult AddInfo(string infoText, string? member = null)
+    public ValidationResult AddInfo(string infoText, int? entityId = null, string? member = null)
     {
-        Messages.Add(new ValidationMessage(ValidationMessageLevel.Info, infoText, member));
+        Messages.Add(new ValidationMessage(ValidationMessageLevel.Info, infoText, entityId, member));
         return this;
     }
 

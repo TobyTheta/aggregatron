@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "Domain.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.TimescaleDb", "Persistence.TimescaleDb\Persistence.TimescaleDb.csproj", "{ECA0BE66-85A7-47D4-9549-A176E489D587}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.TimescaleDb.UnitTests", "Persistence.TimescaleDb.UnitTests\Persistence.TimescaleDb.UnitTests.csproj", "{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,7 @@ Global
 		{76C440FC-E830-4C3D-8962-B84A154152C9} = {488175D2-9544-4B5E-8D95-4FC6CDC94F18}
 		{BB757B87-BB40-46C5-A846-ACB038E5086F} = {488175D2-9544-4B5E-8D95-4FC6CDC94F18}
 		{ECA0BE66-85A7-47D4-9549-A176E489D587} = {EB95ACDE-403A-4D11-9C06-58F5DBD4DBAA}
+		{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD} = {EB95ACDE-403A-4D11-9C06-58F5DBD4DBAA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10922AB8-5D1C-4953-970E-AC26399A68EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -51,5 +54,9 @@ Global
 		{ECA0BE66-85A7-47D4-9549-A176E489D587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA0BE66-85A7-47D4-9549-A176E489D587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECA0BE66-85A7-47D4-9549-A176E489D587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F067630-F53C-41DA-AF5B-9DD5AA85A0AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

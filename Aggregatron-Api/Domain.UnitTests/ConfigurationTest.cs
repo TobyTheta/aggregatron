@@ -25,4 +25,40 @@ public class ConfigurationTest
         var configuration = ConfigurationHelper.ReadConfiguration(true);
         configuration.Should().NotBeNull();
     }
+    
+    [Test]
+    [Category(TestCategory.ContinuousIntegration)]
+    public void Test_Encryption_ShouldSucceed()
+    {
+        var config = ConfigurationHelper.ReadDeveopmentAggregatronConfiguration();
+
+        var s = "SomeTestSecret!";
+
+        var encr = config.Encrypt(s);
+
+        Console.WriteLine($"Encrypted: {encr}");
+
+        var decr = config.Decrypt(encr);
+
+        Console.WriteLine($"Decrypted: {decr}");
+
+        Assert.That(decr, Is.EqualTo(s));
+    }
+    
+    [Test]
+    [Category(TestCategory.ContinuousIntegration)]
+    public void Test_Encryption_Hash_ShouldSucceed()
+    {
+        var config = ConfigurationHelper.ReadDeveopmentAggregatronConfiguration();
+        
+        var hash1 = config.CreateHash("SomeTestSecret!");
+
+        Console.WriteLine($"Hash 1: {hash1}");
+
+        var hash2 = config.CreateHash("SomeTestSecret!");
+
+        Console.WriteLine($"Decrypted: {hash2}");
+
+        hash1.Should().BeEquivalentTo(hash2);
+    }
 }

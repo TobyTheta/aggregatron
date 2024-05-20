@@ -1,12 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Common.Persistence;
-using Microsoft.EntityFrameworkCore;
 
-namespace Persistence.TimescaleDb.Users;
+namespace Domain.Platforms;
 
 [Table("user")]
-public record UserDbo : IEntity
+public record User : IEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

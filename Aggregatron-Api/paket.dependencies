@@ -13,3 +13,4 @@ nuget Npgsql.EntityFrameworkCore.PostgreSQL
 nuget Microsoft.NET.Test.Sdk
 nuget NUnit
 nuget FluentAssertions
+nuget NBuilder
